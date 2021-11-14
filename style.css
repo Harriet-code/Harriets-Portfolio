@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster");
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+/* END*/
+/* this section is the header section that contains the navigational bar */
+
+.navbar {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+  width: 100%;
+  border-bottom: 1px solid #ff0000;
+  overflow: auto;
+  position: fixed;
+}
+/* END*/
+
+/* this section is the navbar section that contains the navigational bar, 
+which consist of the logo,links and button */
+
+.container {
+  background: white;
+  padding: 1rem 0;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  color: rgb(4, 0, 26);
+  font-size: 1.6rem;
+  font-weight: bold;
+  flex-basis: 30%;
+}
+.navbar-logo a {
+  background: none;
+  color: rgb(4, 0, 26);
+}
+.navbar-logo a:hover {
+  background: none;
+}
+.io-color {
+  color: #ff0000;
+}
+
+.navbar-links {
+  display: flex;
+  flex-basis: 40%;
+}
+.navbar-links ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-links li {
+  list-style-type: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.navbar-links ul li a {
+  text-decoration: none;
+  color: rgb(4, 0, 26);
+  padding: 7px 13px;
+}
+.navbar-button {
+  display: flex;
+  flex-basis: 20%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-button button {
+  width: 60%;
+  height: 100%;
+}
+
+.navbar-button button a {
+  text-decoration: none;
+}
+a.active,
+a:hover {
+  background: #ff0000;
+  transition: 0.5s;
+}
+/* END*/
+
+/* this section is the main section that contains the hero, which consist of the the pictures,
+typewriter effect email me button */
+.hero {
+  width: 100%;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: auto;
+  height: 100vh;
+}
+
+.container2 {
+  background: rgb(255, 255, 255);
+  padding: 1rem 0;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.first h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1rem;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/*animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+  }
+
+  /*@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }*/
+
+.first-paragragh {
+  color: rgb(4, 0, 26);
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.second-paragragh {
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: 300;
+}
+.email-me {
+  display: flex;
+  margin-top: 8%;
+}
+
+input {
+  margin-top: 50px;
+  padding: 12px;
+  width: 400px;
+  z-index: 1;
+  border: 1px solid #ff0000;
+  background-color: transparent;
+}
+
+.portfolio-btn {
+  margin-left: -50px;
+  padding: 8px;
+  margin-top: 50px;
+
+  background: #ff0000;
+  border: 0;
+  font-weight: bold;
+  width: 150px;
+  z-index: 5;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(4, 0, 26);
+}
+/* END*/
+
+/* this section is the About me section that contains the about me picture, 
+about me paragraph and button */
+
+.aboutme-container {
+  background: rgb(4, 0, 26);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.inside-container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+
+  gap: 7rem;
+  flex-wrap: wrap;
+  margin-top: 8%;
+}
+.picturee {
+  flex: 1;
+}
+.second-picture {
+  width: 100%;
+}
+.insidecontainer-aboutme {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.insidecontainer-aboutme h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.insidecontainer-aboutme h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+.insidecontainer-aboutme p {
+  color: rgb(224, 224, 224);
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
+.color-text {
+  color: #ff0000;
+}
+.color-name {
+  color: #ff0000;
+}
+.buttons {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.but button {
+  padding: 9px;
+  width: 100px;
+  background-color: #ff0000;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+}
+.but1 button {
+  padding: 9px;
+  width: 100px;
+  background-color: transparent;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 1px solid #ff0000;
+}
+.but1 button a {
+  color: #ff0000;
+}
+.but1 button a:hover {
+  background: none;
+}
+
+/* END*/
+
+/* this section is the skills section that contains the frontend developer and ui/ux skills tab */
+
+.container4 {
+  display: flex;
+  justify-content: center;
+  margin-top: -10%;
+  height: 90vh;
+}
+.inside-container3 {
+  background-color: #ffffff;
+  display: flex;
+  width: 80%;
+  z-index: 3;
+
+  border: 1px solid rgba(4, 0, 26, 0.4);
+  margin-bottom: -2.5rem;
+}
+.inside-container3 h4 {
+  line-height: 2rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(4, 0, 26);
+}
+.inside-container3 h5 {
+  line-height: 2rem;
+  margin-top: 3rem;
+
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(4, 0, 26);
+}
+.inside-container3 p {
+  color: rgb(4, 0, 26);
+  font-size: 1rem;
+  margin: 0.7rem 0;
+  line-height: 1.9rem;
+}
+.make {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid rgb(4, 0, 26, 0.3);
+}
+.design {
+  flex: 1;
+  text-align: center;
+}
+
+.projects-wrap {
+  display: flex;
+  background-color: #ff0000;
+  width: 100%;
+  height: 165vh;
+  justify-content: center;
+  margin: 10% 0;
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6%;
+  background-color: #ffff;
+  width: 80%;
+}
+.projects-intro {
+  color: rgb(4, 0, 26);
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  line-height: 2rem;
+}
+.email a {
+  color: #160068;
+  text-decoration: underline;
+}
+.email a:hover {
+  background: none;
+}
+.projects-intro h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.project-item-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  grid-auto-rows: auto;
+  margin-top: 3rem;
+}
+.projects-item {
+  height: auto;
+  width: 100%;
+
+  border: 1px solid rgba(253, 237, 3, 0.3);
+
+  background-color: rgb(4, 0, 26);
+}
+.projects-item:hover {
+  transform: scale(1.02);
+}
+.projects-item img {
+  width: 100%;
+  height: 250px;
+}
+.project-item-details {
+  text-align: center;
+  color: white;
+}
+.project-name {
+  font-weight: bold;
+  color: #ffffff;
+  margin: 10px 0;
+  font-size: 18px;
+}
+.project-btn {
+  background-color: transparent;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 120px;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 1px solid #ff0000;
+}
+.project-btn:hover {
+  background: linear-gradient(#ff0000, rgb(248, 10, 10));
+}
+.project-btn a {
+  color: #ffff;
+}
+.project-btn a:hover {
+  background: none;
+}
+
+.container5 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+}
+
+.inside-container5 {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.inside-container5 h5 {
+  font-size: 1.5rem;
+}
+.inside-container5 h2 a {
+  font-size: 5rem;
+  color: rgb(4, 0, 26);
+}
+
+.inside-container5 h2 a:hover {
+  background: none;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  margin-top: -7%;
+  z-index: 40;
+}
+.social-media-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  background: #04001a;
+  width: 80%;
+}
+
+.social p {
+  color: white;
+  font-size: 1.2rem;
+}
+.social-icons img {
+  width: 2rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.social button {
+  padding: 9px;
+  width: 100px;
+  background-color: transparent;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 1px solid #ff0000;
+  margin-left: 1rem;
+}
+
+.social button a {
+  color: #ff0000;
+}
+
+.social button a:hover {
+  background: none;
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  background: #ff0000;
+  margin-top: -5%;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.footer-paragraph {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+  width: 80%;
+}
+.footer-paragraph p {
+  text-align: center;
+  font-weight: bold;
+}
